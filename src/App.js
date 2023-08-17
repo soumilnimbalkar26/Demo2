@@ -1,13 +1,13 @@
-// import About from "./Pages/About";
-// import Contact from "./Pages/Contact";
-// import Home from "./Pages/Home";
+import Project from "./Pages/Project";
+// import Background from "./components/Background";
 import Navbar from "./components/Navbar";
 import "./index.css";
 
 function App() {
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar />
+      <Project />
     </>
   );
 }
