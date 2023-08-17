@@ -1,11 +1,13 @@
 import React from "react";
 import Flappy from "../images/FlappyBird.jpg";
+import PGApp from "../images/PictureGallery.png";
+
 import "./Project.css";
 
 const Project = () => {
   return (
     <>
-      <section className="bg-yellow-300">
+      <section className="bg-yellow-300 pb-1">
         <h1 className="text-4xl font-bold flex items-center justify-center p-2 bg-yellow-400">
           FlappyBird
         </h1>
@@ -13,7 +15,7 @@ const Project = () => {
         <div className="flex items-center justify-between">
           <div>
             <img
-              className="rounded-lg mt-3 ml-3 floating-animation"
+              className="rounded-lg mt-3 ml-3 floating-animation drop-shadow-md"
               src={Flappy}
               alt="img"
             />
@@ -30,6 +32,40 @@ const Project = () => {
               keyboard. The game showcases your ability to design graphical user
               interfaces, handle user input, manage game physics, and create an
               enjoyable gaming experience.
+              <p>
+                <a
+                  className="font-bold text-2xl text-blue-600"
+                  href="https://github.com/soumilnimbalkar26"
+                >
+                  Github
+                </a>
+              </p>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-gray-400 pb-1 mt-1">
+        <h1 className="text-4xl font-bold flex items-center justify-center p-2 bg-gray-500">
+          Picture Gallery
+        </h1>
+
+        <div className="flex items-center justify-between">
+          <div>
+            <img
+              className="rounded-lg mt-3 ml-3 floating-animation drop-shadow-xl"
+              src={PGApp}
+              alt="img"
+            />
+          </div>
+
+          <div className="p-5">
+            <p className=" mr-5 ml-5 text-justify">
+              Project Title: <b>The Picture Gallery App</b> is a responsive web
+              application built using HTML, Tailwind CSS, JavaScript, and React
+              JS. The app allows users to view a collection of images sourced
+              from the Unsplash API. It fetches images along with their authors,
+              descriptions, and links to the original images on unsplash.com.
               <p>
                 <a
                   className="font-bold text-2xl text-blue-600"

@@ -1,6 +1,6 @@
 import React from "react";
 import "../index.css";
-import PP from "../images/ProfilePicture.jpg";
+// import PP from "../images/ProfilePicture.jpg";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 // import Home from "../Pages/Home";
@@ -15,68 +15,69 @@ const Navbar = () => {
     <nav
       className={`p-5 ${
         DarkMode ? "bg-gray-900" : "bg-gray-100"
-      } bg-gray-100 p-5 flex items-center justify-between sticky top-0 z-[20]`}
+      } bg-gray-100 p-5 flex items-center justify-between sticky top-0 z-[20] drop-shadow-md`}
     >
       <span className="flex items-center">
-        <img className="object-cover h-11 w-11 mx-4" src={PP} alt="img" />
-        <a
-          href="#"
-          className={`font-bold ${
+        {/* <img className="object-cover h-11 w-11 mx-4" src={PP} alt="img" /> */}
+        <Link
+          to="/"
+          className={`font-bold text-3xl ${
             DarkMode ? "text-white" : "text-black"
-          } mx-4 hover:text-gray-600 duration-500 `}
+          } mx-4 hover:text-gray-600 duration-500`}
         >
           PORTFOLIO
-        </a>
+        </Link>
       </span>
 
       <ul className="flex items-center">
         <li>
-          <a
-            href="#"
+          <Link
+            to="../Pages/Project.jsx"
             className={`${
               DarkMode ? "text-white" : "text-black"
             } mx-4 hover:text-gray-600 duration-500 `}
           >
-            Home
-          </a>
+            Projects
+          </Link>
         </li>
         <li>
-          <a
-            href="#"
+          <Link
+            to="../Pages/Contact.jsx"
             className={`${
               DarkMode ? "text-white" : "text-black"
             } mx-4 hover:text-gray-600 duration-500 `}
           >
             Contact
-          </a>
+          </Link>
         </li>
         <li>
-          <a
-            href="#"
+          <Link
+            to="../Pages/About.jsx"
             className={`${
               DarkMode ? "text-white" : "text-black"
             } mx-4 hover:text-gray-600 duration-500 `}
           >
             About
-          </a>
+          </Link>
         </li>
 
         <li>
-          <a
-            href="#"
+          <Link
+            to="../Pages/SignUp.jsx"
             className="bg-gray-500 hover:bg-gray-50 p-3 rounded text-gray-50 hover:text-gray-700 duration-500 mx-4"
           >
             SignUp
-          </a>
+          </Link>
         </li>
         <li>
-          <a
-            href="#"
+          <Link
+            to="../Pages/SignIn.jsx"
             className="bg-gray-500 hover:bg-gray-50 p-3 rounded text-gray-50 hover:text-gray-700 duration-500 mx-4"
           >
             SignIn
-          </a>
+          </Link>
         </li>
+
         <button
           className={`${
             DarkMode ? "bg-gray-300" : "bg-white"
